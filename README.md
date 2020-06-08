@@ -69,7 +69,7 @@
 - ``LoadBalancer``: Exposes the Service externally using a cloud provider’s load balancer.
   - NodePort and ClusterIP Services, to which the external load balancer routes, are automatically created.
 
-  ````
+ ````
 apiVersion: v1
 kind: Service
 metadata:
@@ -85,7 +85,7 @@ spec:
       port: 8080
       targetPort: 80
       nodePort: 30036
-  ````
+ ````
 - ``labels``: Labels are key/value pairs that are attached to objects (in this case the service). Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users
 - ``selector``: Allows users to filter a list of resources based on labels. The set of Pods targeted by a Service is usually determined by a selector.
 - ``port: 8080``: used to define the port on which the service listens on
