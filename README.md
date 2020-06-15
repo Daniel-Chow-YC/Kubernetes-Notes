@@ -188,3 +188,5 @@ spec:
 - ``kubectl expose deployment <deployment_name> --port 80 --type LoadBalancer``
    - Expose containers to the internet
    - Kubernetes created a service and an external load balancer with a public IP address attached to it. The IP address remains the same for the life of the service. Any network traffic to that public IP address is routed to pods behind the service
+- ``kubectl logs <name_of_pod>``
+  - get the logs of a pod
