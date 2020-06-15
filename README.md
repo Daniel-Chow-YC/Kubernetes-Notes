@@ -95,6 +95,8 @@ spec:
   - it redirects the traffic received on ``port`` to ``targetPort`` which is the directive used to define port on which container has exposed the application.
 - The hello-world service will be exposed internally to cluster applications on port 8080 and externally to the cluster on the node IP address on 30036. It will also forward requests to pods with the label “app: hello-world” on port 80.
 
+- ``kubectl expose deployment <deployment_name> --port 80 --type LoadBalancer``
+
 
 ### Deployments
 - A Deployment provides declarative updates for Pods and ReplicaSets.
@@ -183,3 +185,6 @@ spec:
   - creates or applies a config to a resource
 - ``kubectl apply -f deploy.yml --record``
   - use the ``--record`` flag for deployments for the deployment history
+ - ``kubectl expose deployment <deployment_name> --port 80 --type LoadBalancer``
+  - Expose containers to the internet
+  - Kubernetes created a service and an external load balancer with a public IP address attached to it. The IP address remains the same for the life of the service. Any network traffic to that public IP address is routed to pods behind the service
