@@ -185,6 +185,6 @@ spec:
   - creates or applies a config to a resource
 - ``kubectl apply -f deploy.yml --record``
   - use the ``--record`` flag for deployments for the deployment history
- - ``kubectl expose deployment <deployment_name> --port 80 --type LoadBalancer``
-  - Expose containers to the internet
-  - Kubernetes created a service and an external load balancer with a public IP address attached to it. The IP address remains the same for the life of the service. Any network traffic to that public IP address is routed to pods behind the service
+- ``kubectl expose deployment <deployment_name> --port 80 --type LoadBalancer``
+   - Expose containers to the internet
+   - Kubernetes created a service and an external load balancer with a public IP address attached to it. The IP address remains the same for the life of the service. Any network traffic to that public IP address is routed to pods behind the service
