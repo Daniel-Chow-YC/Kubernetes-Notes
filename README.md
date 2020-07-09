@@ -5,7 +5,7 @@
 
 - Cluster - made up of one or more masters and a bunch of nodes
   - Nodes (each node is a VM or physical machine) (can have many nodes in a cluster)
-    - Pods (can have 1 or more containers in a pod)
+    - Pods (can have 1 or more containers in a pod) -- Pods are the smallest deployable units of computing that can be created and managed in Kubernetes.
     - service (stable network endpoint to connect to one or multiple pods)
 
 ### Masters - The Kubernetes Control Plane
